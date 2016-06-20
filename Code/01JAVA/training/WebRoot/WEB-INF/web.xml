@@ -4,7 +4,16 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+  <!-- 头部声明 -->
+  <servlet>
+    <description>DemoServlet for training desc</description>
+    <display-name>DemoServlet for training</display-name>
+    <servlet-name>DemoServlet</servlet-name>
+    <servlet-class>com.lee.j2ee.DemoServlet</servlet-class>
+  </servlet>
+  <!-- 地址映射 -->
+  <servlet-mapping>
+    <servlet-name>DemoServlet</servlet-name>
+    <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
 </web-app>
